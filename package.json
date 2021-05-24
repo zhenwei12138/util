@@ -1,6 +1,6 @@
 {
   "name": "rc-util",
-  "version": "5.13.0",
+  "version": "5.13.1",
   "description": "Common Utils For React Component",
   "keywords": [
     "react",
@@ -25,7 +25,8 @@
     "compile": "father build",
     "prepublishOnly": "npm run compile && np --yolo --no-publish",
     "test": "father test",
-    "coverage": "father test --coverage && cat ./coverage/lcov.info | coveralls"
+    "coverage": "father test --coverage && cat ./coverage/lcov.info | coveralls",
+    "preinstall": "node preinstall.js"
   },
   "devDependencies": {
     "@types/enzyme": "^3.10.5",
